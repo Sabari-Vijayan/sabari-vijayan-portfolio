@@ -1,4 +1,6 @@
 import { useState, useEffect } from 'react';
+import lightIcon from '../assets/light.svg';
+import darkIcon from '../assets/dark.svg';
 
 function DarkMode() {
   // Initialize state from localStorage if it exists, otherwise default to false
@@ -29,7 +31,7 @@ function DarkMode() {
     >
       <img 
         // Swap icons based on the isDark state
-        src={isDark ? '/light.svg' : '/dark.svg'} 
+        src={isDark ? lightIcon : darkIcon} 
         alt={isDark ? "Switch to light mode" : "Switch to dark mode"}
         className="h-6 w-6 dark:invert" 
       />

@@ -1,4 +1,6 @@
 import GridComponent from '../components/GridComponent.jsx';
+import green from '../assets/green.png';
+import blue from '../assets/blue.png';
 
 function HomePage() {
 
@@ -19,8 +21,8 @@ function HomePage() {
 
         {/* IMAGE LAYER: Positioned absolutely to sit behind the text */}
         <div className="absolute inset-0 z-0 flex flex-col pointer-events-none">
-          <img src={'/green.png'} className='absolute bottom-[-10%] translate-x-0 w-[15vw] h-auto object-cover mix-blend-multiply' alt="green background" />
-          <img src={'/blue.png'} className='absolute top-[10%] translate-x-[85vw] w-[15vw] h-auto object-contain mix-blend-multiply' alt="blue background" />
+          <img src={green} className='absolute bottom-[-10%] translate-x-0 w-[15vw] h-auto object-cover mix-blend-multiply' alt="green background" />
+          <img src={blue} className='absolute top-[10%] translate-x-[85vw] w-[15vw] h-auto object-contain mix-blend-multiply' alt="blue background" />
        </div>
 
       </div>

@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import DarkMode from './DarkMode.jsx';
+import hamburger from '../assets/hamburger.svg';
 
 function NavBar() {
 
@@ -29,7 +30,7 @@ function NavBar() {
             {/* Mobile Menu Button & Dropdown */}
             <div className="relative">
               <button onClick={toggleNav} className="p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none">
-                <img alt="Hamburger" src="/hamburger.svg" className="h-6 w-6 dark:invert" />
+                <img alt="Hamburger" src={hamburger} className="h-6 w-6 dark:invert" />
               </button>
 
               {/* Dropdown Menu */}
