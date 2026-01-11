@@ -1,0 +1,24 @@
+.contact-container {
+    border: solid 1px grey;
+    position: fixed;
+    height: auto;
+    z-index: 999;
+    border-radius: 24px;
+
+    /* WIDTH: Min 80px, Preferred 10vw, Max 150px */
+    width: clamp(80px, 10vw, 150px);
+    
+    /* PADDING: Vertical 10px, Horizontal fluid */
+    padding: 10px clamp(12px, 2vw, 24px);
+
+    /* POSITIONING: Distance from edge gets smaller on mobile */
+    bottom: clamp(1rem, 5vh, 3rem);
+    right: clamp(1rem, 5vw, 3rem);
+}
+
+.contact {
+    font-size: clamp(8px, 1.2vw, 18px);
+    margin: 0;
+    text-align: center;
+    white-space: nowrap;
+}
