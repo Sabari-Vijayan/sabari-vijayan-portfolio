@@ -17,7 +17,7 @@ const Experience = () => {
   ];
 
   return (
-    <div className="p-8 max-w-2xl h-[100dvh]">
+    <div id="about" className="p-8 max-w-2xl h-[100dvh]">
 
 
       <h1 className="text-3xl font-bold mb-10">Experience</h1>

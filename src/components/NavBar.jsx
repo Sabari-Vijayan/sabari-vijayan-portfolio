@@ -38,16 +38,16 @@ function NavBar() {
                 <div className="absolute right-0 mt-2 w-48 bg-white dark:bg-[#1f2120] rounded-md shadow-lg py-1 border border-gray-200 dark:border-gray-700 z-50">
                   <ul className="flex flex-col">
                     <li>
-                      <a href="#" className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800">Home</a>
+                      <a href="#home" onClick={toggleNav} className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800">Home</a>
                     </li>
                     <li>
-                      <a href="#" className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800">Projects</a>
+                      <a href="#projects" onClick={toggleNav} className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800">Projects</a>
                     </li>
                     <li>
-                      <a href="#" className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800">About</a>
+                      <a href="#about" onClick={toggleNav} className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800">About</a>
                     </li>
                     <li>
-                      <a href="#" className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800">Contact</a>
+                      <a href="#contact" onClick={toggleNav} className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800">Contact</a>
                     </li>
                   </ul>
                 </div>

@@ -23,7 +23,7 @@ const ContactPage = () => {
   ];
 
   return (
-    <div className="max-w-2xl p-8 mt-10">
+    <div id="contact" className="max-w-2xl p-8 mt-10">
       <h1 className="text-4xl font-bold mb-2">Sabari Vijayan</h1>
       <p className="text-gray-500 mb-8">Feel free to reach out for collaborations or just a friendly hello.</p>
 
