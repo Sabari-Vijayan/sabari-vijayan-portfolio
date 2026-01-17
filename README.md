@@ -1,16 +1,71 @@
-# React + Vite
+# Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a personal portfolio website built to showcase my projects and experience. It is designed as a single-page application using React and styled with Tailwind CSS.
 
-Currently, two official plugins are available:
+## Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[https://sabari-vijayan-portfolio-phaz.vercel.app/](https://sabari-vijayan-portfolio-phaz.vercel.app/)
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React** (v19.2.0)
+- **Vite** (v7.2.4) - Build tool and development server
+- **Tailwind CSS** (v4.1.18) - Utility-first CSS framework
+- **Lucide React** (v0.562.0) - Icon library
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Responsive Design:** Optimized for various screen sizes, including a mobile-friendly navigation menu.
+- **Dark Mode:** Integrated dark/light theme toggle with state persistence using `localStorage`.
+- **Single Page Navigation:** Smooth scrolling to different sections (Home, Projects, About, Contact).
+- **Component-Based Architecture:** Modular design with separate components for Navigation, Hero, Projects, Experience, and Contact sections.
+
+## Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Sabari-Vijayan/sabari-vijayan-portfolio.git
+   ```
+
+2. Navigate to the project directory:
+   ```bash
+   cd portfolio
+   ```
+
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+4. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+## File Structure
+
+```
+/src
+├── assets/          # Static assets (images, icons)
+├── components/      # Reusable UI components
+│   ├── Contact.jsx
+│   ├── DarkMode.jsx # Theme toggle logic
+│   ├── NavBar.jsx   # Responsive navigation
+│   └── ...
+├── pages/           # Main section components
+│   ├── HomePage.jsx
+│   ├── ProjectsPage.jsx
+│   ├── ExperiencePage.jsx
+│   └── ContactPage.jsx
+├── App.jsx          # Main application layout
+└── main.jsx         # Entry point
+```
+
+## Deployment
+
+The project is deployed on Vercel.
+
+To build for production locally:
+```bash
+npm run build
+```
